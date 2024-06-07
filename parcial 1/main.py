@@ -2,6 +2,7 @@
 
 
 import bicicletas
+from bicicletas import *
 import os
 
 def main():
@@ -44,25 +45,25 @@ def main():
                 print(bici)
         
         elif opcion == '3':
-            bicicletas.asignar_tiempos(lista_bicicletas)
+            asignar_tiempos(lista_bicicletas)
         
         elif opcion == '4':
-            bicicletas.informar_ganador(lista_bicicletas) #error
+            informar_ganador(lista_bicicletas) #error
         
         elif opcion == '5':
             tipo = input('Ingrese el tipo de biciceta: ')
             nombre_archivo = input('Ingrese el nombre del archivo csv: (DEBE TERMINAR CON .csv) ')
-            bicicletas.filtrar_por_tipo(lista_bicicletas, tipo, nombre_archivo)
+            filtrar_por_tipo(lista_bicicletas, tipo, nombre_archivo)
         
         elif opcion == '6':
-            bicicletas.promedio_por_tipo(lista_bicicletas)
+            promedio_por_tipo(lista_bicicletas)
         
         elif opcion == '7':
-            bicicletas.mostrar_posiciones(lista_bicicletas)
+            mostrar_posiciones(lista_bicicletas)
         
         elif opcion == '8':
             nombre_archivo = input('Ingrese el nombre del archivo JSON: (DEBE TERMINAR CON .json) ')
-            bicicletas.guardar_posiciones(lista_bicicletas, nombre_archivo)
+            guardar_posiciones(lista_bicicletas, nombre_archivo)
             print(f'Archivo {nombre_archivo} guardado con exito.')
         
         elif opcion == '9':
@@ -76,4 +77,4 @@ if __name__ == '__main__':
 
 
 
-#corregir asignar tiempos informas ganador y crear archivo csv, no llegue profe :(
+#corregir asignar tiempos informas ganador y crear archivo csv, no llegue con el tiempo
